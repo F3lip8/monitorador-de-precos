@@ -26,7 +26,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--secundaria);
+    background-color: var(--principal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +41,7 @@ body {
 
 .add-button:hover {
     cursor: pointer;
-    color: var(--secundaria);
-    background-color: var(--escura2);
+    background-color: var(--clara);
 }
 
 /* HEADER */
@@ -157,7 +156,6 @@ main {
 
 .change {
     display: flex;
-    align-items: center;
     gap: 5px;
     font-weight: bold;
     font-size: 1.5em;
@@ -189,7 +187,7 @@ main {
     gap: 20px;
     justify-content: center;
     border-top: 2px solid lightgray;
-    padding: 10px;
+    padding: 10px 15px;
     margin-top: 10px;
 }
 
@@ -207,6 +205,7 @@ main {
     width: 100%;
     max-width: 300px;
     transition: 0.4s;
+    box-sizing: border-box;
 }
 
 .btn::after {
@@ -247,23 +246,29 @@ footer {
         font-size: 1.1em;
     }
 
+    .card-prices {
+        justify-content: center;
+    }
+
     .price {
         display: block;
         font-size: 1.2em;
     }
 
-    /* Botões ocupam toda a largura */
+    .change {
+            justify-content: center;
+    }
+
     .botoes {
         flex-direction: column;
         gap: 6px;
     }
 
     .btn {
-        width: 100%; /* Em vez de 300px fixos */
-        max-width: 200px;
+        width: 100%;
+        max-width: 100%;
     }
 
-    /* Input de pesquisa ocupa largura total */
     .search-input {
         width: 90%;
         max-width: 100%;
