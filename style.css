@@ -31,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+    text-decoration: none;
     font-size: 2em;
     color: white;
     position: fixed;
@@ -48,11 +49,13 @@ body {
 
 header {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: end;
-    border-bottom: 2px solid var(--principal);
+    border-bottom: 4px solid var(--principal);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.414);
+    z-index: 1000;
 }
 
 .search-input {
@@ -222,6 +225,79 @@ footer {
     background-color: var(--maisescura);
     padding: 20px;
     text-align: center;
+}
+
+/* Página adicionar produto */
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 12px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-add {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-cancel {
+    background: #ccc;
+    color: #333;
+}
+
+.btn-cancel:hover {
+    background: #aaa;
+}
+
+.btn-save {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-save:hover {
+    background: #0056b3;
 }
 
 @media (max-width: 768px) {
